@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/primevue/resources/themes/lara-light-green/theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <!-- //google fonts// -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,13 +55,8 @@
                                 </div>
                                 <div class="group-input">
                                     <label class="mobile-label text-end p-2 fw-bold">رقم الجوال</label>
-                                    <div class="mobile-number-container ">
-                                        <div class="country-code">
-                                            <img src="https://png.pngtree.com/png-vector/20220511/ourlarge/pngtree-round-country-flag-saudi-arabia-png-image_4570913.png"
-                                                alt="Saudi Arabia Flag">
-                                            <span>+966</span>
-                                        </div>
-                                        <input type="number" placeholder="5xxxxxxxxx" class="mobile-input">
+                                    <div class="mobile-number-container">
+                                        <input id="phone" type="tel" placeholder="5xxxxxxxxx" class="mobile-input">
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +174,16 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            initialCountry: "sa",
+            preferredCountries: ["sa", "ae", "eg"],
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
 </body>
-<script src="js/bootstrap.bundle.min.js"></script>
 
 </html>
