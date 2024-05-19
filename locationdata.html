@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/primevue/resources/themes/lara-light-green/theme.css" />
+    <!-- //google fonts// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>بيانات المكان</title>
+</head>
+
+<body>
+    <div class="create">
+        <div class="container">
+            <div class="row">
+                <!-- //head// -->
+                <div class="tittle d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="img-logo ">
+                        <img src="img/logo.png" alt="" style="width: 50%;">
+                    </div>
+                    <div class="create-logo">
+                        <p class="fw-medium"> لديك حساب؟ <a href="index.html">سجل دخول الان</a></p>
+                    </div>
+                </div>
+                <!-- //new account// -->
+                <div class="new d-flex text-center flex-column mt-3">
+                    <div class="text-new">
+                        <h1 class="main-font fw-bold">انشاء حساب جديد</h1>
+                    </div>
+                    <div class="new-tap d-flex justify-content-center mt-3 gap-3 flex-wrap">
+                        <div>بيانات الحساب</div>
+                        <div class="active">بيانات المكان</div>
+                        <div>مواعيد الدوام</div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4 flex-wrap ">
+                        <form action="">
+                            <div class="d-flex justify-content-between gap-3 flex-wrap">
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">رقم السجل التجارى</label>
+                                    <div class="mobile-number-container ">
+                                        <input type="number" class="text-end">
+                                    </div>
+                                </div>
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">صورة السجل التجارى</label>
+                                    <div class="mobile-number-container ">
+
+                                        <label for="fileInput" class="custom-file-upload">
+                                            اختر صورة
+                                            <input type="file" id="fileInput" accept="image/*">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between gap-3 flex-wrap">
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">اسم المكان</label>
+                                    <div class="mobile-number-container ">
+                                        <input type="text" class="text-end">
+                                    </div>
+                                </div>
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">صورة او شعار المكان </label>
+                                    <div class="mobile-number-container ">
+
+                                        <label for="fileInput" class="custom-file-upload">
+                                            اختر صورة
+                                            <input type="file" id="fileInput" accept="image/*">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between gap-3 flex-wrap">
+
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">صورة اضافية للمكان</label>
+                                    <div class="mobile-number-container ">
+
+                                        <label for="fileInput" class="custom-file-upload">
+                                            اختر صورة
+                                            <input type="file" id="fileInput" accept="image/*">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">فيديو للمكان <sapn
+                                            class="text-danger">(ارفق رابط يوتيوب)</sapn></label>
+                                    <div class="mobile-number-container ">
+
+                                        <input type="text" class="file-input" placeholder="ضع اللينك">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between gap-3 flex-wrap mt-1">
+
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">المدينة
+                                    </label>
+
+                                    <select class="form-select">
+                                        <option selected> اختيار المدينه</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="group-input">
+                                    <label class="mobile-label text-end p-3 fw-bold">التصنيف
+                                    </label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>اختر من القائمة</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="nots mt-3">
+                                <label class="mobile-label text-end p-3 fw-bold">نبذه عن المكان</label>
+                                <textarea name="" id=""></textarea>
+                            </div>
+                            <div class="d-flex gap-3 justify-content-center flex-wrap group-btns">
+                                <div class="btn-follow mt-4">
+                                    <a href="createaccount.html" class=" bg-transparent" style="color: #004889;">
+                                        رجوع
+                                    </a>
+                                </div>
+                                <div class="btn-follow mt-4">
+                                    <a href="time.html">
+                                        متابعة
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="polic-text mt-3">
+                                تسجيلك لدى خيارى يعنى موافقتك<br />على <a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">الشروط والاحكام</a>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 " id="exampleModalLabel"></h1>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="title-policy text-end">
+                                                <h1 class=" main-font">الشروط والاحكام</h1>
+                                            </div>
+                                            <div class="descritoin-policy">
+                                                <p>هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و
+                                                    حجم و لون الخط حيث يتم التحكم في هذا النص وامكانية
+                                                    تغييرة في اي وقت عن طريق ادارة الموقع . يتم اضافة هذا النص كنص
+                                                    تجريبي للمعاينة فقط وهو لا يعبر عن أي موضوع محدد انما
+                                                    لتحديد الشكل العام للقسم او الصفحة أو الموقع.
+                                                    هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و
+                                                    حجم و لون الخط حيث يتم التحكم في هذا النص وامكانية
+                                                    تغييرة في اي وقت عن طريق ادارة الموقع . يتم اضافة هذا النص كنص
+                                                    تجريبي للمعاينة فقط وهو لا يعبر عن أي موضوع محدد انما
+                                                    لتحديد الشكل العام للقسم او الصفحة أو الموقع. هذا نص تجريبي لاختبار
+                                                    شكل و حجم النصوص و طريقة عرضها في هذا المكان و حجم و
+                                                    لون الخط حيث يتم التحكم في هذا النص وامكانية تغييرة في اي وقت عن
+                                                    طريق ادارة الموقع . يتم اضافة هذا النص كنص تجريبي
+                                                    للمعاينة فقط وهو لا يعبر عن أي موضوع محدد انما لتحديد الشكل العام
+                                                    للقسم او الصفحة أو الموقع.
+                                                    هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و
+                                                    حجم و لون الخط حيث يتم التحكم في هذا النص وامكانية
+                                                    تغييرة في اي وقت عن طريق
+                                                    .يتم اضافة هذا النص كنص تجريبي للمعاينة فقط وهو لا يعبر عن أي موضوع
+                                                    محدد انما لتحديد الشكل العام للقسم او الصفحة أو
+                                                    الموقع. هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا
+                                                    المكان و حجم و لون الخط حيث يتم التحكم في هذا النص
+                                                    وامكانية تغييرة في اي وقت عن طريق ادارة الموقع . يتم اضافة هذا النص
+                                                    كنص تجريبي للمعاينة فقط وهو لا يعبر عن أي موضوع محدد
+                                                    انما لتحديد الشكل العام للقسم او الصفحة أو الموقع. هذا نص تجريبي
+                                                    لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و
+                                                    حجم و لون الخط حيث يتم التحكم في هذا النص وامكانية تغييرة في اي وقت
+                                                    عن طريق ادارة الموقع . يتم اضافة هذا النص كنص تجريبي
+                                                    للمعاينة فقط وهو لا يعبر عن أي موضوع محدد انما لتحديد الشكل العام
+                                                    للقسم او الصفحة أو الموقع.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer d-flex justify-content-around  align-items-center   mt-5">
+                        <div class="text-cop ">
+                            <p class=" text-black-50">خيارى 2024-جميع الحقوق محفوظة@</p>
+                        </div>
+                        <div class="icon  d-flex justify-content-center gap-2 mb-2  ">
+                            <div class="icon-child">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div class="icon-child">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="icon-child">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="icon-child">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="icon-child">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                        </div>
+                        <div class="link  d-flex justify-content-center gap-3 mb-3  flex-wrap ">
+                            <a href="#" class=" text-black-50 text-decoration-none ">الشروط والاحكام</a>
+                            <a href="#" class=" text-black-50 text-decoration-none">سياسة الخصوصية</a>
+                            <a href="#" class=" text-black-50 text-decoration-none">الاسئلة الشائعة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+</html>
